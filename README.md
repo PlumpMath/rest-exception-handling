@@ -1,6 +1,6 @@
 # RESTful API Exception Handling
 
-RESTfull application to test exception handling practice.
+RESTful application to test exception handling practice.
 
 This java web application uses [RESTEasy](http://resteasy.jboss.org/) to provide RESTful endpoints.
 
