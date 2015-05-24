@@ -4,7 +4,7 @@ RESTful application to test exception handling practice.
 
 This java web application uses [RESTEasy](http://resteasy.jboss.org/) to provide RESTful endpoints.
 
-The goal here is to practice server exception handling and how to best build a meaningful response to the client.  
+The goal here is to practice server exception handling and how to build a meaningful response to the client.  
 This is also an attempt to follow best practices of RESTful API design as well since it comes hand in hand with exception handling.
 
 Please contribute with anything you think would turn this application into a better practice.
@@ -26,12 +26,12 @@ To test REST services I recommend using [Postman](https://www.getpostman.com/).
 
 ## Success responses
 
-A sample success response can be fetched at `GET /entities`.  
+A sample success response can be fetched at `GET /api/entities01`.  
 The response has a `200` http status code and the body (`application/json`) contains the data fetched.
 
 ## Business logic exception responses
 
-A sample business logic exception can be fetched at `GET /entities/{id}`.  
+A sample business logic exception can be fetched at `GET /api/entities01/{id}`.  
 The response has a `403` (`forbidden`) http status code and the body (`application/json`) contains more information about the exception (`stackTrace`), including a friendly message to the user (`message`).
 
 There is a lot of discussion about what http status code best represents a business logic error.  
@@ -47,7 +47,7 @@ Please contribute to this discussion if you have a different approach on http st
 
 ## Unexpected server exception responses
 
-A sample unexpected server exception can be fetcher at `POST /entities`. It expects to receive a JSON (`application/json`) containing the attributes of an entity.  
+A sample unexpected server exception can be fetcher at `POST /api/entities01`. It expects to receive a JSON (`application/json`) containing the attributes of an entity.  
 Example:  
 ```json
 {
