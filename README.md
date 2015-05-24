@@ -1,6 +1,6 @@
 # RESTful API Exception Handling
 
-RESTfull application to test exception handling practice.
+RESTful application to test exception handling practice.
 
 This java web application uses [RESTEasy](http://resteasy.jboss.org/) to provide RESTful endpoints.
 
@@ -19,6 +19,8 @@ Please contribute with anything you think would turn this application into a bet
 ## Dev Environment Setup
 
 * Run `mvn install`.
+
+To test REST services I recommend using [Postman](https://www.getpostman.com/).
 
 # Using the web application
 
