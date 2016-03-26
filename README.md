@@ -11,15 +11,14 @@ Please contribute with anything you think would turn this application into a bet
 
 ## Pre-requisites
 
-* [Gradle](http://gradle.org/);
 * Java server application with 3.1 servlet spec (like [Tomcat 8](http://tomcat.apache.org/)).
 
 **Unless explicitly told otherwise, all comands shown here are supposed to be run at the project's root folder.**
 
 ## Dev Environment Setup
 
-* Run `gradle build`;
-* If using [Eclipse](https://eclipse.org/), run `gradle eclipse` to generate wtp configuration.
+* Run `gradlew build`;
+* If using [Eclipse](https://eclipse.org/), run `gradlew eclipse` to generate wtp configuration.
 
 To test REST services I recommend using [Postman](https://www.getpostman.com/).
 
