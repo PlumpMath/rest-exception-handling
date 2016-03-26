@@ -2,23 +2,24 @@
 
 RESTful application to test exception handling practice.
 
-This java web application uses [RESTEasy](http://resteasy.jboss.org/) to provide RESTful endpoints.
+This java web application follows JAX-RS API (implemented with [RESTEasy](http://resteasy.jboss.org/)) to provide RESTful endpoints.
 
 The goal here is to practice server exception handling and how to build a meaningful response to the client.  
-This is also an attempt to follow best practices of RESTful API design as well since it comes hand in hand with exception handling.
+This is also an attempt to follow best practices of RESTful API design as well since it goes hand in hand with exception handling.
 
 Please contribute with anything you think would turn this application into a better practice.
 
 ## Pre-requisites
 
-* [Apache Maven](http://maven.apache.org/);
+* [Gradle](http://gradle.org/);
 * Java server application with 3.1 servlet spec (like [Tomcat 8](http://tomcat.apache.org/)).
 
-**Obs: Unless explicitly told otherwise, all comands shown here are supposed to be run at the project's root folder.**
+**Unless explicitly told otherwise, all comands shown here are supposed to be run at the project's root folder.**
 
 ## Dev Environment Setup
 
-* Run `mvn install`.
+* Run `gradle build`;
+* If using [Eclipse](https://eclipse.org/), run `gradle eclipse` to generate wtp configuration.
 
 To test REST services I recommend using [Postman](https://www.getpostman.com/).
 
