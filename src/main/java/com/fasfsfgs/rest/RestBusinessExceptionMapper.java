@@ -19,7 +19,7 @@ public class RestBusinessExceptionMapper implements ExceptionMapper<BusinessExce
     exceptionTO.setMessage(exception.getMessage());
     exceptionTO.setStackTrace(StackTraceUtils.getStringFromStackTrace(exception));
 
-    return Response.status(Status.FORBIDDEN).entity(exceptionTO).type(MediaType.APPLICATION_JSON)
+    return Response.status(Status.BAD_REQUEST).entity(exceptionTO).type(MediaType.APPLICATION_JSON)
         .build();
   }
 

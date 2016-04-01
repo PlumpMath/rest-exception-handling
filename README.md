@@ -31,8 +31,8 @@ The response has a `200` http status code and the body (`application/json`) cont
 
 ## Business logic exception responses
 
-A sample business logic exception can be fetched at `GET /api/entities01/{id}`.  
-The response has a `403` (`forbidden`) http status code and the body (`application/json`) contains more information about the exception (`stackTrace`), including a friendly message to the user (`message`).
+A sample business logic exception can be fetched at `DELETE /api/entities01/{id}`.  
+The response has a `400` (`bad request`) http status code and the body (`application/json`) contains more information about the exception (`stackTrace`), including a friendly message to the user (`message`).
 
 There is a lot of discussion about what http status code best represents a business logic error.  
 In my opinion all business exceptions boils down to a more meaningful http status code but the client will most likely ignore the code and only care about the user message.  
